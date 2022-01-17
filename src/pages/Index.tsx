@@ -9,6 +9,7 @@ function Index() {
   
   const handleFlagSubmit = (event: any): void => {
     event.preventDefault();
+    console.log(flagOne);
 
     if (flagOne === process.env.FLAG_ONE) {
       navigate("level-one");
@@ -24,7 +25,7 @@ function Index() {
         <Input
           autoFocus
           value={flagOne}
-          onChange={(value) => setFlagOne(value)}
+          onChange={setFlagOne}
         />
         <Button />
       </form>

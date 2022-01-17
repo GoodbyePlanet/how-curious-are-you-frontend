@@ -23,7 +23,7 @@ function LevelOne() {
         <Input
           autoFocus
           value={flagTwo}
-          onChange={(value) => setFlagTwo(value)}
+          onChange={setFlagTwo}
         />
         <Button />
       </form>
