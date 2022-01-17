@@ -1,5 +1,5 @@
 interface Props {
-  value: string;
+  value?: string;
   autoFocus?: boolean;
   onChange: (value: string) => void;
 }
