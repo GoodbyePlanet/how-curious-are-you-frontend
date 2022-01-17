@@ -10,7 +10,7 @@ function LevelThree() {
   const handleFlagSubmit = (event: any): void => {
     event.preventDefault();
 
-    if (flagFour === "worldWideWeb") {
+    if (flagFour === process.env.LEVEL_FOUR) {
       navigate("level-four");
     }
   };
