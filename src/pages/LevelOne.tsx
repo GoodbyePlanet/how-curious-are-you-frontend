@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Input from "../components/Input";
 
+import "./LevelOne.css";
+
 function LevelOne() {
   const [flagTwo, setFlagTwo] = useState("");
   const navigate = useNavigate();
@@ -18,6 +20,16 @@ function LevelOne() {
   return (
     <div>
       <p>Congrats, you've reached level ONE</p>
+
+      <div className="two">
+        <div>
+          <div>
+            <div>
+              <p>HCAY_Flag: levelTwo</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <form onSubmit={handleFlagSubmit}>
         <Input
