@@ -12,8 +12,8 @@ function LevelOne() {
   const handleFlagSubmit = (event: any): void => {
     event.preventDefault();
 
-    if (flagTwo === process.env.FLAG_ONE) {
-      navigate("level-one");
+    if (flagTwo === process.env.FLAG_TWO) {
+      navigate("level-two");
     }
   };
 
@@ -32,11 +32,7 @@ function LevelOne() {
       </div>
 
       <form onSubmit={handleFlagSubmit}>
-        <Input
-          autoFocus
-          value={flagTwo}
-          onChange={setFlagTwo}
-        />
+        <Input autoFocus value={flagTwo} onChange={setFlagTwo} />
         <Button />
       </form>
     </div>
