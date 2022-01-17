@@ -1,14 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import Button from "../components/Button";
 import Input from "../components/Input";
 
 function Index() {
   const [flagOne, setFlagOne] = useState("");
-
+  const navigate = useNavigate();
+  
   const handleFlagSubmit = (event: any): void => {
     event.preventDefault();
 
-    console.log("FLAG-ONE", flagOne);
+    if (flagOne === process.env.FLAG_ONE) {
+      navigate("level-one");
+    }
   }
 
   return (
