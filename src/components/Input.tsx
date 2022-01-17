@@ -1,3 +1,5 @@
+import "./Input.css"
+
 interface Props {
   value?: string;
   autoFocus?: boolean;
@@ -8,6 +10,7 @@ function Input({ value, autoFocus, onChange }: Props): JSX.Element {
   return (
     <div>
       <input
+        className="input"
         type="text"
         placeholder="Enter FLAG for next level"
         autoFocus={autoFocus}

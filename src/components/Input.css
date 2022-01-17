@@ -1,0 +1,15 @@
+.input {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 8px 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  font-family: Roboto Mono, monospace;
+}
