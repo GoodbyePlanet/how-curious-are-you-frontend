@@ -17,7 +17,7 @@ function LevelSeven() {
 
   return (
     <div>
-      <p>Congrats, you've reached level FIVE</p>
+      <p>Congrats, you've reached level SEVEN</p>
 
       <form onSubmit={handleFlagSubmit}>
         <Input autoFocus value={flagEight} onChange={setFlagEight} />
