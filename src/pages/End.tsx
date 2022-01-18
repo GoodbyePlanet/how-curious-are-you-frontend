@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../components/Button";
 import Input from "../components/Input";
 
-function End() {
+function End(): JSX.Element {
   const [name, setName] = useState("");
   const [link, setLink] = useState("");
 
