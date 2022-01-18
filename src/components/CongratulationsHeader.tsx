@@ -3,7 +3,7 @@ interface Props {
 }
 
 function CongratulationsHeader({ level }: Props): JSX.Element {
-  return <p>Congrats, you've reached level {level}</p>;
+  return <p>Congrats, you've reached level <strong>{level}</strong></p>;
 }
 
 export default CongratulationsHeader;

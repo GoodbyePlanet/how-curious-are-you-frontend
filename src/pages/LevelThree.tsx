@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import CongratulationsHeader from "../components/CongratulationsHeader";
 import Form from "../components/Form";
 import Input from "../components/Input";
 
@@ -18,7 +19,7 @@ function LevelThree(): JSX.Element {
 
   return (
     <div>
-      <p>Congrats, you've reached level THREE</p>
+      <CongratulationsHeader level="THREE" />
 
       <Form onSubmit={handleFlagSubmit}>
         <Input autoFocus value={flagFour} onChange={setFlagFour} />
