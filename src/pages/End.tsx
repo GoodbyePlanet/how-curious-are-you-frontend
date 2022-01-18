@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Input from "../components/Input";
 
 function End() {
   const [name, setName] = useState("");
   const [link, setLink] = useState("");
-  const navigate = useNavigate();
 
   const handleFinisherSubmit = (event: any): void => {
     event.preventDefault();
