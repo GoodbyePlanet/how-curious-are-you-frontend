@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import Form from "../components/Form";
 import Input from "../components/Input";
 
 import "./LevelOne.css";
 
-function LevelOne() {
+function LevelOne(): JSX.Element {
   const [flagTwo, setFlagTwo] = useState("");
   const navigate = useNavigate();
 
@@ -31,10 +32,10 @@ function LevelOne() {
         </div>
       </div>
 
-      <form onSubmit={handleFlagSubmit}>
+      <Form onSubmit={handleFlagSubmit}>
         <Input autoFocus value={flagTwo} onChange={setFlagTwo} />
         <Button />
-      </form>
+      </Form>
     </div>
   );
 }
