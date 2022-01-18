@@ -4,23 +4,28 @@ import Button from "../components/Button";
 import Input from "../components/Input";
 
 function End() {
-  const [flagTen, setFlagTen] = useState("");
+  const [name, setName] = useState("");
+  const [link, setLink] = useState("");
   const navigate = useNavigate();
 
-  const handleFlagSubmit = (event: any): void => {
+  const handleFinisherSubmit = (event: any): void => {
     event.preventDefault();
 
-    if (flagTen === process.env.LEVEL_TEN) {
-      navigate("hall-of-fame");
-    }
+    console.log("Adding new finiser ", name, link);
   };
 
   return (
     <div>
-      <p>Congrats, you've reached the LAST level</p>
+      <p>Congrats, you've finished all levels</p>
 
-      <form onSubmit={handleFlagSubmit}>
-        <Input autoFocus value={flagTen} onChange={setFlagTen} />
+      <p>
+        If you would like to be in the <a href="/hall-of-fame">Hall Of Fame</a>{" "}
+        page fill the name and your prefered social network link
+      </p>
+
+      <form onSubmit={handleFinisherSubmit}>
+        <Input autoFocus value={name} onChange={setName} />
+        <Input autoFocus value={link} onChange={setLink} />
         <Button />
       </form>
     </div>
