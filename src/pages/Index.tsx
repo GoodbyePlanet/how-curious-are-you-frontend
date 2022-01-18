@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import Form from "../components/Form";
 import Input from "../components/Input";
 
 function Index() {
@@ -13,6 +14,7 @@ function Index() {
   }, []);
 
   const handleFlagSubmit = (event: any): void => {
+    console.log(flagOne);
     event.preventDefault();
 
     if (flagOne === process.env.FLAG_ONE) {
@@ -25,10 +27,10 @@ function Index() {
       <p>Hi there, I'm Nemanja and I have a question for you</p>
       <h3>How curious are you?</h3>
 
-      <form onSubmit={handleFlagSubmit}>
+      <Form onSubmit={handleFlagSubmit}>
         <Input autoFocus value={flagOne} onChange={setFlagOne} />
         <Button />
-      </form>
+      </Form>
     </div>
   );
 }
