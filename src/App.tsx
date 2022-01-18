@@ -4,12 +4,12 @@ import LevelOne from "./pages/LevelOne";
 import LevelTwo from "./pages/LevelTwo";
 import LevelThree from "./pages/LevelThree";
 import LevelFour from "./pages/LevelFour";
-
-import "./App.css";
 import LevelFive from "./pages/LevelFive";
 import LevelSix from "./pages/LevelSix";
 import LevelSeven from "./pages/LevelSeven";
 import LevelEight from "./pages/LevelEight";
+
+import "./App.css";
 
 function App() {
   return (
