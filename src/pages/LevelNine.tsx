@@ -17,7 +17,7 @@ function LevelNine() {
 
   return (
     <div>
-      <p>Congrats, you've reached level NINE</p>
+      <p>Congrats, you've reached the LAST level</p>
 
       <form onSubmit={handleFlagSubmit}>
         <Input autoFocus value={flagTen} onChange={setFlagTen} />
