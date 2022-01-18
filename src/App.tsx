@@ -8,6 +8,9 @@ import LevelFive from "./pages/LevelFive";
 import LevelSix from "./pages/LevelSix";
 import LevelSeven from "./pages/LevelSeven";
 import LevelEight from "./pages/LevelEight";
+import LevelNine from "./pages/LevelNine";
+import End from "./pages/End";
+import HallOfFame from "./pages/HallOfFame";
 
 import "./App.css";
 
@@ -24,6 +27,9 @@ function App() {
         <Route path="/level-six" element={<LevelSix />} />
         <Route path="/level-seven" element={<LevelSeven />} />
         <Route path="/level-eight" element={<LevelEight />} />
+        <Route path="/level-nine" element={<LevelNine />} />
+        <Route path="/end" element={<End />} />
+        <Route path="/hall-of-fame" element={<HallOfFame />} />
       </Routes>
     </div>
   );
