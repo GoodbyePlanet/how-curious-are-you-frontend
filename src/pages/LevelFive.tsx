@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import Form from "../components/Form";
 import Input from "../components/Input";
 
-function LevelFive() {
+function LevelFive(): JSX.Element {
   const [flagSix, setFlagSix] = useState("");
   const navigate = useNavigate();
 
@@ -19,10 +20,10 @@ function LevelFive() {
     <div>
       <p>Congrats, you've reached level FIVE</p>
 
-      <form onSubmit={handleFlagSubmit}>
+      <Form onSubmit={handleFlagSubmit}>
         <Input autoFocus value={flagSix} onChange={setFlagSix} />
         <Button />
-      </form>
+      </Form>
     </div>
   );
 }
