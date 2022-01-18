@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import Form from "../components/Form";
 import Input from "../components/Input";
 
-function Index() {
+function Index(): JSX.Element {
   const [flagOne, setFlagOne] = useState("");
   const navigate = useNavigate();
 
@@ -14,7 +14,6 @@ function Index() {
   }, []);
 
   const handleFlagSubmit = (event: any): void => {
-    console.log(flagOne);
     event.preventDefault();
 
     if (flagOne === process.env.FLAG_ONE) {
