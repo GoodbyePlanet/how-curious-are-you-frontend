@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../components/Button";
+import Form from "../components/Form";
 import Input from "../components/Input";
 
 function End(): JSX.Element {
@@ -21,11 +22,11 @@ function End(): JSX.Element {
         page fill the name and your prefered social network link
       </p>
 
-      <form onSubmit={handleFinisherSubmit}>
+      <Form onSubmit={handleFinisherSubmit}>
         <Input autoFocus value={name} onChange={setName} />
         <Input autoFocus value={link} onChange={setLink} />
         <Button />
-      </form>
+      </Form>
     </div>
   );
 }
